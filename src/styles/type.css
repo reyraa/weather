@@ -1,0 +1,55 @@
+h1 {
+  font-size: var(--font-size-h1);
+  color: var(--color-white);
+  margin: 0;
+}
+h2 {
+  font-size: var(--font-size-h2);
+  color: var(--color-white);
+  margin: 0;
+}
+h3 {
+  font-size: var(--font-size-h3);
+  color: var(--color-white);
+  margin: 0;
+  line-height: 1.4em;
+  letter-spacing: 3px;
+}
+h4 {
+  font-size: var(--font-size-h4);
+  color: var(--color-light-gray);
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+h5 {
+  font-size: var(--font-size-h5);
+  color: var(--color-light-gray);
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+}
+h6 {
+  font-size: var(--font-size-h6);
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 860px) {
+  html {
+    font-size: calc(10px + 12 * ((100vw - 860px) / 550));
+  }
+}
+
+@media (min-width: 1410px) {
+  html {
+    font-size: 22px;
+  }
+}

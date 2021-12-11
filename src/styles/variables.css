@@ -1,0 +1,23 @@
+:root {
+  /**
+   * TYPOGRAPHY
+   **/
+  --font-family-body: 'Roboto', sans-serif;
+  --font-size-h1: 11.089rem;
+  --font-size-h2: 6.854rem;
+  --font-size-h3: 4.236rem;
+  --font-size-h4: 2.618rem;
+  --font-size-h5: 1.618rem;
+  --font-size-h6: 1rem;
+
+  /**
+   * COLORS
+   **/
+  --color-dark-blue: #262A59;
+  --color-light-gray: #A8AABD;
+  --color-white: #fff;
+
+  /**
+   * SIZES
+   **/
+}
