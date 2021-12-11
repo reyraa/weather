@@ -1,0 +1,15 @@
+.location {
+  text-align: left;
+  flex: 4 0 0;
+}
+
+.location address,
+.location time {
+  padding-left: 16%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.location time {
+  padding-top: 3.9%;
+}
