@@ -1,0 +1,39 @@
+.forecast {
+  text-align: center;
+  flex: 0 100%;
+  padding-top: 2%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.forecast ul {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 10px;
+}
+
+.forecast ul li {
+  height: 10%;
+  padding: 2% 1px;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.forecast ul li:hover,
+.forecast ul li:active {
+  background: rgba(255, 255, 255, 0.1)
+}
+
+.forecast ul li.selected {
+  background: rgba(255, 255, 255, 0.2)
+}
+
+.forecast ul li img {
+  width: 90px;
+}
+
+.forecast ul li h4 {
+  color: var(--color-white);
+}
+
