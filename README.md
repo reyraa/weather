@@ -4,6 +4,31 @@ A basic React app that displays a weather information set.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 You can select each hour to see the details.
 
+## Installation
+
+This application is written in JavaScript and uses several npm packages. Therefore you need to install the dependencies to get it up and running.
+
+### Prerequisites
+
+You need the following tools to install the application
+- [Node](nodejs)
+- [Git](https://git-scm.com)
+
+### Steps
+Run the following command will install the desired version of dependencies: 
+
+```
+npm ci
+```
+
+If you wish to update to the latest backward compatible version of the dependencies, run
+
+```
+npm i
+```
+
+The complete logs of the changes will be written in `package-lock.json`.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -41,8 +66,20 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The unit test are written using `react-testing-library`. You can run them by:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm test
+```
+
+There are no e2e tests at the moment.
+
+## Contributors
+
+See [contributors section](https://github.com/reyraa/weather/graphs/contributors).
+
+
+## License
+Redux Monitor is licensed under MIT. Feel free to use it for personal or business purpose.
