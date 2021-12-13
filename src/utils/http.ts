@@ -1,7 +1,6 @@
 type props = {
   baseUrl?: string,
   path: string,
-  // params: string | string[][] | Record<string, string> | URLSearchParams | undefined,
   method?: 'GET' | 'POST' | 'PATCH' | 'PUT' | 'DELETE' | 'OPTIONS' | 'HEAD' | undefined,
 };
 
@@ -18,12 +17,11 @@ type props = {
  */
 const http = ({
   baseUrl = '', path, method = 'GET',
-}: props) =>
-  fetch(`${baseUrl}${path}`, {
-    method,
-    headers: {
-      Accept: 'application/json',
-    },
-  });
+}: props) => fetch(`${baseUrl}${path}`, {
+  method,
+  headers: {
+    Accept: 'application/json',
+  },
+});
 
 export default http;

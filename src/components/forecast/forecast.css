@@ -6,34 +6,36 @@
   overflow-x: scroll;
 }
 
-.forecast ul {
+.forecast .container {
   display: flex;
   flex-flow: row nowrap;
   padding-bottom: 10px;
 }
 
-.forecast ul li {
+.forecast .day {
   height: 10%;
   padding: 2% 1px;
   margin: 0 10px;
   border-radius: 6px;
   cursor: pointer;
+  background: transparent;
+  border: 0;
 }
 
-.forecast ul li:hover,
-.forecast ul li:active {
+.forecast .day:hover,
+.forecast .day:active {
   background: rgba(255, 255, 255, 0.1)
 }
 
-.forecast ul li.selected {
+.forecast .day.selected {
   background: rgba(255, 255, 255, 0.2)
 }
 
-.forecast ul li img {
+.forecast .day img {
   width: 90px;
 }
 
-.forecast ul li h4 {
+.forecast .day h4 {
   color: var(--color-white);
 }
 

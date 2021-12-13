@@ -5,19 +5,18 @@ import Location from '../location';
 import Forecast from '../forecast';
 import './app.css';
 
-type httpProps = {
-  baseUrl?: string,
-  path: string,
-  // params: string | string[][] | Record<string, string> | URLSearchParams | undefined,
-  method?: 'GET' | 'POST' | 'PATCH' | 'PUT' | 'DELETE' | 'OPTIONS' | 'HEAD' | undefined,
+interface httpProps {
+  baseUrl?: string;
+  path: string;
+  method?: 'GET' | 'POST' | 'PATCH' | 'PUT' | 'DELETE' | 'OPTIONS' | 'HEAD' | undefined;
 };
 
-type Response = {
-  list: any[],
-  city: any,
-  cod?: string,
-  message?: number,
-  cnt?: number,
+interface Response {
+  list: any[];
+  city: any;
+  cod?: string;
+  message?: number;
+  cnt?: number;
 };
 
 const defaultData: Response = {
@@ -37,10 +36,6 @@ const App = () => {
   useEffect(() => {
     const props: httpProps =  {
       path: '/data/2.5/forecast?q=München,DE&appid=b6907d289e10d714a6e88b30761fae22',
-      // params: {
-      //   q: 'München,DE',
-      //   appid: 'b6907d289e10d714a6e88b30761fae22'
-      // },
     };
     http(props)
       .then(async (response: any) => {

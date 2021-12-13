@@ -13,13 +13,13 @@ interface Weather {
   icon: string;
 };
 
-type Info = {
-  weather: Weather[],
-  main: Main,
+interface Info {
+  weather: Weather[];
+  main: Main;
 };
 
-type Props = {
-  info: Info,
+interface Props {
+  info: Info;
 };
 
 test('renders today\'s info correctly', () => {

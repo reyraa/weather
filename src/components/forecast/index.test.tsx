@@ -13,16 +13,16 @@ interface Weather {
   icon: string;
 };
 
-type Info = {
-  weather: Weather[],
-  main: Main,
-  dt: number,
+interface Info {
+  weather: Weather[];
+  main: Main;
+  dt: number;
 };
 
-type Props = {
-  info: Info[],
-  selected: number,
-  onSelect: (i: number) => void,
+interface Props {
+  info: Info[];
+  selected: number;
+  onSelect: (i: number) => void;
 };
 
 const props: Props = {

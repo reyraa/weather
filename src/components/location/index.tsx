@@ -1,9 +1,9 @@
 import React from 'react';
 import './location.css';
 
-type Props = {
-  city: string,
-  datetime: number
+interface Props {
+  city: string;
+  datetime: number;
 };
 
 const weekDays = ['Saturday', 'Sunday', 'Monday', 'Wednesday', 'Thursday', 'Friday'];

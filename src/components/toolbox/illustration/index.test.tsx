@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Today from '.';
 
-type Props = {
-  name: string,
+interface Props {
+  name: string;
 };
 
 test('renders an image with given name', () => {

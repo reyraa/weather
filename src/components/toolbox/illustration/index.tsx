@@ -4,12 +4,12 @@ import statusClear from '../../../assets/images/status-clear.svg';
 import statusClouds from '../../../assets/images/status-cloud.svg';
 import defaultAsset from '../../../assets/images/status-cloud.svg';
 
-type Props = {
-  name: string,
+interface Props {
+  name: string;
 };
 
-type Assets = {
-  [key: string]: any
+interface Assets {
+  [key: string]: any;
 };
 
 const assets: Assets = {

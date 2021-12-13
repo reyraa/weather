@@ -2,9 +2,9 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Location from '.';
 
-type Props = {
-  city: string,
-  datetime: number
+interface Props {
+  city: string;
+  datetime: number;
 };
 
 test('renders learn react link', () => {

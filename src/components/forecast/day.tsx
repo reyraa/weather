@@ -14,17 +14,17 @@ interface Weather {
   icon: string;
 };
 
-type Info = {
-  weather: Weather[],
-  main: Main,
-  dt: number,
+interface Info {
+  weather: Weather[];
+  main: Main;
+  dt: number;
 };
 
-type props = {
-  info: Info,
-  index: number,
-  selected: boolean,
-  onSelect: (index: number) => void,
+interface props {
+  info: Info;
+  index: number;
+  selected: boolean;
+  onSelect: (index: number) => void;
 };
 
 const normalize = (date: Date) => (
@@ -35,12 +35,14 @@ const Day = ({ info, index, onSelect, selected }: props) => {
   const date = new Date(info.dt * 1000);
 
   return (
-    <li
+    <button
       className={`day ${selected ? 'selected' : ''}`}
       onClick={() => onSelect(index)}
     >
       <time>
         <h5>{ normalize(date) }</h5>
+      </time>
+      
         <figure>
           <Illustration name={`status${info.weather[0].main}`} />
         </figure>
@@ -49,8 +51,7 @@ const Day = ({ info, index, onSelect, selected }: props) => {
             value={info.main.temp}
           />
         </h4>
-      </time>
-    </li>
+    </button>
   );
 }
 
